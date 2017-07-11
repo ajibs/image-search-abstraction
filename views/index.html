@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Unicode Transformation Format; Universally agreed format containing all characters from different languages -->
+        <meta charset="utf-8">
+        
+        <!-- Resize content for device browser's width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Use the best Internet Explorer engine available -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Image Search Abstraction Layer</title>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <h1>FreeCodeCamp API: Image Search Abstraction Layer</h1>
+            <p>User stories:</p>
+            <ol>
+                <li>
+                    I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+                </li>
+                <li>
+                    I can get a list of the most recently submitted search strings.
+                </li>
+            </ol>
+
+            <h2>Usage 1:</h2>
+            <p>
+                <span class="links">
+                    https://ajibs-url-shortener.herokuapp.com/api/imagesearch/paystack
+                </span>
+            </p>
+            <h2>Output 1:</h2>
+            <p>
+                <span class="links">
+                   [
+{
+image: "https://paystack.com/public/images/opg.png",
+page: "https://paystack.com/",
+snippet: "Accept one-off and recurring payments easily. We've figured it all out for you, from start to finish. No set up costs, no hidden charges, no commitments."
+},
+{
+image: "http://blogs-images.forbes.com/mfonobongnsehe/files/2016/12/Shola-Akinlade-and-Ezra-Olubi-Paystack-Co-founders-300x200.jpg",
+page: "https://www.forbes.com/sites/mfonobongnsehe/2016/12/19/nigerian-fintech-startup-paystack-raises-1-3-million/",
+snippet: "Dec 19, 2016 ... A Q&A with the founders of Paystack, one of Nigeria's most hotly anticipated tech start-ups which has just secured $1.3M Seed investment from ..."
+},
+{
+image: "https://paystack.com/assets/website/images/company/investors.png",
+page: "https://paystack.com/company",
+snippet: "There are many barriers businesses have to face to accept payments online and that's what Paystack is fixing. We're making progress. We've simplified the ..."
+},
+{
+image: "https://pbs.twimg.com/profile_images/810741743436124160/sfGjeR7F_400x400.jpg",
+page: "https://twitter.com/paystack?lang=en",
+snippet: "The latest Tweets from Paystack (@paystack). We provide Nigerian merchants with the tools and services needed to accept one-off and recurring payments ..."
+},
+{
+image: "https://avatars3.githubusercontent.com/u/14998667?v=3&s=400",
+page: "https://github.com/PaystackHQ/paystack-android",
+snippet: "Apr 6, 2017 ... This is a library for easy integration of Paystack with your Android application. Use this library in your Android app so we shoulder the burden of ..."
+},
+{
+image: "https://res.cloudinary.com/crunchbase-production/image/upload/v1482999816/uph74pwwijksr7hybwzj.png",
+page: "https://www.crunchbase.com/organization/paystack",
+snippet: "Paystack lets businesses accept payments via credit card, debit card, money transfer and mobile money on their websites or mobile apps."
+}
+]
+                </span>  
+            </p> 
+            <h2>Usage 2:</h2>
+            <p>
+                <span class="links">
+                    ajibs-url-shortener.herokuapp.com/api/latest/imagesearch
+                </span>  
+            </p> 
+            <h2>Output 2:</h2>
+            <p>
+                <span class="links">
+                    [
+                        {
+                            term: "paystack",
+                            when: "2017-07-11T13:20:20.070Z"
+                        },
+                        {
+                            term: "airbnb",
+                            when: "2017-07-11T13:12:58.672Z"
+                        }
+                    ]
+                </span>  
+            </p> 
+        </div>      
+    </body>
+</html>
+
+

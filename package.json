@@ -1,0 +1,17 @@
+{
+  "name": "google-image-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.3",
+    "free-google-image-search": "^1.0.0",
+    "mongodb": "^2.2.30"
+  }
+}
